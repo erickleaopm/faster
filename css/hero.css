@@ -1,0 +1,74 @@
+.hero {
+  background-color: var(--black);
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: content;
+  max-inline-size: 42.8125rem;
+}
+
+.hero-content h3 {
+  color: var(--white);
+  font: var(--headline3);
+  margin: 0;
+}
+
+.hero-content h3 + p {
+  font: var(--body1-regular);
+  margin-block-start: 1.5rem;
+  margin-block-end: 3rem;
+  max-inline-size: 580px;
+}
+
+.hero-content button {
+  border: 0.125rem solid var(--white);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  background: transparent;
+  max-block-size: 3.25rem;
+  max-inline-size: 16.25rem;
+  padding: 0.75rem 0;
+  font: var(--button);
+  color: var(--white);
+  margin-block-end: 1.5rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.hero-content button:hover {
+  color: var(--black);
+  border-color: var(--black);
+  background-color: var(--white);
+}
+
+.hero-content button:active {
+  transform: scale(.95);
+}
+
+.hero-content a {
+  color: var(--grey);
+  transition: .3s;
+}
+
+.hero-content a:hover {
+  color: var(--white);
+}
+
+@media screen and (min-width: 48rem) {
+  .hero {
+    block-size: 45rem;
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  .hero {
+    block-size: 50.875rem;
+  }
+}

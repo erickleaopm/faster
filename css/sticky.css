@@ -1,0 +1,15 @@
+.sticky {
+  grid-area: phone;
+  position: sticky;
+  inset-block-start: 7.75rem;
+}
+
+.sticky img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  .sticky {
+    inset-block-start: 0;
+  }
+}
