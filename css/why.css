@@ -1,4 +1,57 @@
 .why {
-  background-color: forestgreen;
-  block-size: 500px;
+  background-color: var(--black);
+  block-size: 48.4375rem;
+  position: relative;
+}
+
+.why-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.why-text {
+  max-inline-size: 458px;
+}
+
+.why-content h2 {
+  color: var(--white);
+  font: var(--headline2);
+  margin-block-end: 1.5rem;
+}
+
+.why-content h2 + p {
+  margin-block-start: 0;
+  margin-block-end: 3.75rem;
+  color: var(--white);
+}
+
+.why-progress {
+  position: relative;
+}
+
+.why-progress::before {
+  content:"";
+  block-size: 2.5rem;
+  background-color: var(--white);
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  border-start-start-radius: 6.25rem;
+  border-end-start-radius: 6.25rem;
+  z-index: 1;
+}
+
+.why-progress::after {
+  content:"";
+  block-size: 2.5rem;
+  inline-size: 60%;
+  background-color: #2FB464;
+  position: absolute;
+  top: 0;
+  left:0;
+  border-radius: 6.25rem;
+  z-index: 2;
 }

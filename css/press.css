@@ -1,9 +1,40 @@
 .press {
-  background-color: burlywood;
-  block-size: 500px;
+  background-color: var(--white);
   margin-block-start: -75px;
 }
 
 .press-content {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-block: 2.75rem;
+}
+
+.client-list {
+  margin-block-end: 9.0625rem;
+  display: inline-flex;
+  gap: 1.5rem;
+}
+
+.press-text {
+  max-inline-size: 38.1875rem;
+}
+
+.press h2 {
+  color: var(--black);
+  font: var(--headline2);
+  margin-block-start: 4rem;
+  margin-block-end: 1.5rem;
+}
+
+.press h2 + p {
+  margin-block-end: 5rem;
+}
+
+.press-content > img {
+  border-radius: .5rem;
+  inline-size: 100%;
+  block-size: 100%;
+  aspect-ratio: 16 / 9;
 }

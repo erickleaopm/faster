@@ -1,15 +1,29 @@
 .sticky {
-  grid-area: phone;
-  position: sticky;
-  inset-block-start: 7.75rem;
+  background-image: linear-gradient(
+    to top,
+    var(--white) 0%,
+    var(--white) 50%,
+    blue 50%,
+    blue 100%
+  );
+  text-align: center;
 }
 
 .sticky img {
-  width: 100%;
+  max-inline-size: 200px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 992px) {
   .sticky {
-    inset-block-start: 0;
+    background: none;
+    grid-area: phone;
+    position: sticky;
+    inset-block-start: 7.75rem;
+    z-index: 3;
+  }
+
+  .sticky img {
+     max-inline-size: 400px;
+    width: 100%;
   }
 }

@@ -1,13 +1,17 @@
-@import './header.css';
-@import './hero.css';
-@import './press.css';
-@import './transaction.css';
-@import './why.css';
-@import './sticky.css';
+@import "./header.css";
+@import "./hero.css";
+@import "./press.css";
+@import "./transaction.css";
+@import "./why.css";
+@import "./how.css";
+@import "./testimonial.css";
+@import "./signup.css";
+@import "./sticky.css";
 
 :root {
-  --phoneSize: 25rem;
-  --gridTemplateColumns: 1fr var(--phoneSize) 906px 1fr;
+  --phoneSize: minmax(12.5rem, 25rem);
+  --contentSize: minmax(42.8125rem, 54.75rem);
+  --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
   --mainFont: "Inter", sans-serif;
   --primary: #fed941;
   --white: #ffffff;
@@ -15,8 +19,8 @@
   --black: #000000;
   --headline2: 700 3rem/3.625rem Inter;
   --headline3: 800 2.875rem/3.5rem Inter;
-  --headline4: 700 1.75rem/normal Inter;
-  --headline5: 700 1.5625rem/normal Inter;
+  --headline4: 700 1.75rem / normal Inter;
+  --headline5: 700 1.5625rem / normal Inter;
   --button: 700 1.125rem/1.75rem Inter;
   --caption: 400 0.75rem/1.375rem Inter;
   --body1-regular: 400 1.125rem/1.6875rem Inter;
@@ -31,27 +35,55 @@ body {
   font-family: var(--mainFont);
 }
 
-section {
-  block-size: 500px;
+p {
+  font: var(--body1-regular);
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: var(--gridTemplateColumns);
-  grid-template-areas: "wrapper-start phone content wrapper-end";
+  display: block;
 }
 
 .grid section {
   grid-column: 1 / -1;
 }
 
-.inset-grid {
-  display: grid;
-  grid-template-columns: var(--gridTemplateColumns);
-  grid-template-areas: ". . content .";
-  grid-column: 1 / -1;
+.inset-grid [class*="content"] {
+  grid-area: content;
+  padding-inline-start: 1.875rem;
 }
 
-.inset-grid [class*='content'] {
-  grid-area: content;
+@media screen and (min-width: 992px) {
+  .grid {
+    --phoneSize: 280px;
+    --contentSize: 715px;
+    --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: "wrapper-start phone content wrapper-end";
+  }
+
+  .inset-grid {
+    display: grid;
+    grid-template-columns: var(--gridTemplateColumns);
+    grid-template-areas: ". . content .";
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .grid {
+    --phoneSize: 310px;
+    --contentSize: 715px;
+    --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
+    grid-template-columns: var(--gridTemplateColumns);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .grid {
+    --phoneSize: 400px;
+    --contentSize: 715px;
+    --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
+    grid-template-columns: var(--gridTemplateColumns);
+  }
 }
