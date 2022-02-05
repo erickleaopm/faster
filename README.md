@@ -9,10 +9,6 @@ Crea el sitio para contarle a la gente del nuevo checkout que es veloz y busca a
 
 <img width="400px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/faster/faster-desktop.png?raw=true" />
 
-## Mobile
-
-<img width="280px"  src="https://github.com/no-te-rindas/imagenes/blob/main/Readmes/faster/faster-mobile.png?raw=true" />
-
 ## Disclaimer
 
 Todas son propuestas, el propósito de **/Proyectos** es brindarte el diseño, el límite de la creación lo dictan tus ganas de hacerlo realidad y tu skills del momento a la hora de codear.
