@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.why.inset-grid {
+  grid-template-areas: ". . content content";
+}
+
 .why-content {
   display: flex;
   flex-direction: column;
@@ -12,7 +16,7 @@
 }
 
 .why-text {
-  max-inline-size: 458px;
+  max-inline-size: 28.625rem;
 }
 
 .why-content h2 {

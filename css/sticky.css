@@ -10,7 +10,7 @@
 }
 
 .sticky img {
-  max-inline-size: 200px;
+  max-inline-size: 12.5rem;
 }
 
 @media screen and (min-width: 992px) {
@@ -23,7 +23,7 @@
   }
 
   .sticky img {
-     max-inline-size: 400px;
+    max-inline-size: 25rem;
     width: 100%;
   }
 }

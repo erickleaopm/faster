@@ -54,8 +54,8 @@ p {
 
 @media screen and (min-width: 992px) {
   .grid {
-    --phoneSize: 280px;
-    --contentSize: 715px;
+    --phoneSize: 17.5rem;
+    --contentSize: 44.6875rem;
     --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
     display: grid;
     grid-template-columns: var(--gridTemplateColumns);
@@ -72,8 +72,8 @@ p {
 
 @media screen and (min-width: 1366px) {
   .grid {
-    --phoneSize: 310px;
-    --contentSize: 715px;
+    --phoneSize: 19.375rem;
+    --contentSize: 44.6875rem;
     --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
     grid-template-columns: var(--gridTemplateColumns);
   }
@@ -81,8 +81,8 @@ p {
 
 @media screen and (min-width: 1920px) {
   .grid {
-    --phoneSize: 400px;
-    --contentSize: 715px;
+    --phoneSize: 25rem;
+    --contentSize: 44.6875rem;
     --gridTemplateColumns: 1fr var(--phoneSize) var(--contentSize) 1fr;
     grid-template-columns: var(--gridTemplateColumns);
   }
